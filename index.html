@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Three-in-a-Row Coin Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="turn-blue">
+  <main class="game">
+    <section class="tray blue" id="tray1">
+      <div class="tray-coins" id="coins1"></div>
+    </section>
+
+    <div class="status" id="status"></div>
+    <div class="hint" id="hint"></div>
+
+    <div class="board" id="board">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <path class="line-outline" d="M14 14H86V86H14Z M50 14V86 M14 50H86 M14 14L86 86 M86 14L14 86"/>
+        <path class="line-fill" d="M14 14H86V86H14Z M50 14V86 M14 50H86 M14 14L86 86 M86 14L14 86"/>
+      </svg>
+    </div>
+
+    <section class="tray red" id="tray2">
+      <div class="tray-coins" id="coins2"></div>
+    </section>
+  </main>
+
+  <div class="overlay" id="overlay" hidden>
+    <div class="win-card" id="winCard">
+      <div class="win-emoji">🎉🎉🎉</div>
+      <div class="win-text" id="winText"></div>
+      <div class="win-emoji">🎉🎉🎉</div>
+      <button id="playAgain">PLAY AGAIN</button>
+    </div>
+  </div>
+
+  <button class="restart" id="restart">↻ Restart</button>
+  <script src="script.js"></script>
+</body>
+</html>
